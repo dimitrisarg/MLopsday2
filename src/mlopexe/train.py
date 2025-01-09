@@ -41,12 +41,12 @@ def train(lr: float = 1e-3, batch_size: int = 32, epochs: int = 10) -> None:
 
     print("Training complete")
     torch.save(model.state_dict(), "models/model.pth")
-    fig, axs = plt.subplots(1, 2, figsize=(15, 5))
-    axs[0].plot(statistics["train_loss"])
-    axs[0].set_title("Train loss")
-    axs[1].plot(statistics["train_accuracy"])
-    axs[1].set_title("Train accuracy")
-    fig.savefig("reports/figures/training_statistics.png")
+    # fig, axs = plt.subplots(1, 2, figsize=(15, 5))
+    # axs[0].plot(statistics["train_loss"])
+    # axs[0].set_title("Train loss")
+    # axs[1].plot(statistics["train_accuracy"])
+    # axs[1].set_title("Train accuracy")
+    # fig.savefig("reports/figures/training_statistics.png")
 
 
 if __name__ == "__main__":
